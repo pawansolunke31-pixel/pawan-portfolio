@@ -16,9 +16,11 @@ import {
   ChevronLeft,
   ChevronRight,
   X,
+  Bot,
 } from "lucide-react";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiVercel } from "react-icons/si";
 function App() {
 
   const [galleryOpen, setGalleryOpen] = useState(false);
@@ -276,10 +278,12 @@ function App() {
     <div className="project-card">
 
       <div className="project-icon">
-        <Blocks />
+        <Blocks size={28} />
       </div>
 
       <h3>Blockchain Voting System</h3>
+
+      <div className="project-dev-badge">DEV :- Pawan Solunke</div>
 
       <p>
         A decentralized blockchain-based voting application designed to
@@ -293,26 +297,41 @@ function App() {
         <span>Web3</span>
       </div>
 
-      <a
-        href="https://github.com/pawansolunke31-pixel"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaGithub size={18} />
-        View Project
-      </a>
+      <div className="project-actions">
+        <a
+          href="https://blockchain-voting-system-blue.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-btn live-btn"
+          title="Open Live Demo on Vercel"
+        >
+          <SiVercel size={14} />
+          Live Demo
+          <ExternalLink size={14} />
+        </a>
 
-      <button
-        className="gallery-btn"
-        onClick={() => {
-          setGalleryProject("blockchain-voting");
-          setGalleryTotal(9);
-          setCurrentImage(1);
-          setGalleryOpen(true);
-        }}
-      >
-        View Gallery
-      </button>
+        <a
+          href="https://github.com/pawansolunke31-pixel"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-btn github-btn"
+        >
+          <FaGithub size={16} />
+          Code
+        </a>
+
+        <button
+          className="project-btn gallery-btn"
+          onClick={() => {
+            setGalleryProject("blockchain-voting");
+            setGalleryTotal(9);
+            setCurrentImage(1);
+            setGalleryOpen(true);
+          }}
+        >
+          Gallery
+        </button>
+      </div>
 
     </div>
 
@@ -320,7 +339,54 @@ function App() {
     <div className="project-card">
 
       <div className="project-icon">
-        <GraduationCap />
+        <Bot size={28} />
+      </div>
+
+      <h3>AI Chat Box</h3>
+
+      <p>
+        An intelligent conversational AI application providing responsive,
+        context-aware chat interactions with an interactive modern interface.
+      </p>
+
+      <div className="project-tech">
+        <span>React</span>
+        <span>AI / LLM</span>
+        <span>API</span>
+        <span>Tailwind</span>
+      </div>
+
+      <div className="project-actions">
+        <a
+          href="https://pawan-ai-chat-box.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-btn live-btn"
+          title="Open Live Demo on Vercel"
+        >
+          <SiVercel size={14} />
+          Live Demo
+          <ExternalLink size={14} />
+        </a>
+
+        <a
+          href="https://github.com/pawansolunke31-pixel"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-btn github-btn"
+        >
+          <FaGithub size={16} />
+          Code
+        </a>
+      </div>
+
+    </div>
+
+
+    <div className="project-card">
+
+      <div className="project-icon">
+        <GraduationCap size={28} />
       </div>
 
       <h3>Campus Readiness Platform</h3>
@@ -336,26 +402,29 @@ function App() {
         <span>Career</span>
       </div>
 
-      <a
-        href="https://github.com/pawansolunke31-pixel"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaGithub size={18} />
-        View Project
-      </a>
+      <div className="project-actions">
+        <a
+          href="https://github.com/pawansolunke31-pixel"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-btn github-btn"
+        >
+          <FaGithub size={16} />
+          Code
+        </a>
 
-      <button
-        className="gallery-btn"
-        onClick={() => {
-          setGalleryProject("campus-readiness");
-          setGalleryTotal(5);
-          setCurrentImage(1);
-          setGalleryOpen(true);
-        }}
-      >
-        View Gallery
-      </button>
+        <button
+          className="project-btn gallery-btn"
+          onClick={() => {
+            setGalleryProject("campus-readiness");
+            setGalleryTotal(5);
+            setCurrentImage(1);
+            setGalleryOpen(true);
+          }}
+        >
+          Gallery
+        </button>
+      </div>
 
     </div>
 
