@@ -211,7 +211,7 @@ function App() {
 
           <p>
             I am a B.Tech Computer Science Engineering student specializing in
-            IoT and Blockchain Technology. My interests include Cybersecurity,
+            Cyber Security, IoT and Blockchain Technology. My interests include Cybersecurity,
             Ethical Hacking, Blockchain Development, Web Development and
             Network Security.
           </p>
@@ -497,11 +497,11 @@ function App() {
     <div className="education-content">
       <div className="education-spec-tag">
         <Sparkles size={16} />
-        <span>Specialization: <strong>IoT & Blockchain Technology</strong></span>
+        <span>Specialization: <strong>Cyber Security, IoT & Blockchain Technology</strong></span>
       </div>
 
       <p className="education-summary">
-        Focusing on decentralized technologies, smart contracts, network security, IoT architecture, and modern full-stack development solutions.
+        Focusing on cybersecurity defense, decentralized technologies, network security, IoT architecture, and modern full-stack software development.
       </p>
 
       <div className="education-chips">
