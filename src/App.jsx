@@ -311,10 +311,11 @@ function App() {
         </a>
 
         <a
-          href="https://github.com/pawansolunke31-pixel"
+          href="https://github.com/pawansolunke31-pixel/Blockchain-Voting-System"
           target="_blank"
           rel="noopener noreferrer"
           className="project-btn github-btn"
+          title="View Source Code on GitHub"
         >
           <FaGithub size={16} />
           Code
@@ -344,16 +345,18 @@ function App() {
 
       <h3>AI Chat Box</h3>
 
+      <div className="project-dev-badge">DEV :- Pawan Solunke</div>
+
       <p>
         An intelligent conversational AI application providing responsive,
-        context-aware chat interactions with an interactive modern interface.
+        context-aware chat interactions, smart tools, and modern glassmorphic interface.
       </p>
 
       <div className="project-tech">
-        <span>React</span>
+        <span>JavaScript</span>
         <span>AI / LLM</span>
-        <span>API</span>
-        <span>Tailwind</span>
+        <span>CSS3 Glassmorphism</span>
+        <span>Web Search API</span>
       </div>
 
       <div className="project-actions">
@@ -370,10 +373,11 @@ function App() {
         </a>
 
         <a
-          href="https://github.com/pawansolunke31-pixel"
+          href="https://github.com/pawansolunke31-pixel/Ai-Chat-Box"
           target="_blank"
           rel="noopener noreferrer"
           className="project-btn github-btn"
+          title="View Source Code on GitHub"
         >
           <FaGithub size={16} />
           Code
@@ -390,6 +394,8 @@ function App() {
       </div>
 
       <h3>Campus Readiness Platform</h3>
+
+      <div className="project-dev-badge">DEV :- Pawan Solunke</div>
 
       <p>
         A platform created to help students prepare for placements,
@@ -408,6 +414,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
           className="project-btn github-btn"
+          title="View Project on GitHub"
         >
           <FaGithub size={16} />
           Code
