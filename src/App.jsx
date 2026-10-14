@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 
 import {
@@ -39,6 +39,17 @@ function App() {
       prev === 1 ? galleryTotal : prev - 1
     );
   };
+
+  useEffect(() => {
+    if (!galleryOpen) return;
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") setGalleryOpen(false);
+      else if (e.key === "ArrowRight") nextImage();
+      else if (e.key === "ArrowLeft") previousImage();
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [galleryOpen, galleryTotal]);
 
   return (
     <div className="portfolio">
@@ -382,6 +393,18 @@ function App() {
           <FaGithub size={16} />
           Code
         </a>
+
+        <button
+          className="project-btn gallery-btn"
+          onClick={() => {
+            setGalleryProject("ai-chat-box");
+            setGalleryTotal(5);
+            setCurrentImage(1);
+            setGalleryOpen(true);
+          }}
+        >
+          Gallery
+        </button>
       </div>
 
     </div>
@@ -540,11 +563,18 @@ function App() {
 </footer>
 
 {galleryOpen && (
-  <div className="gallery-overlay">
+  <div
+    className="gallery-overlay"
+    onClick={(e) => {
+      if (e.target === e.currentTarget) setGalleryOpen(false);
+    }}
+  >
 
     <button
       className="gallery-close"
       onClick={() => setGalleryOpen(false)}
+      aria-label="Close Gallery"
+      title="Close (Esc)"
     >
       <X />
     </button>
@@ -552,11 +582,21 @@ function App() {
     <button
       className="gallery-arrow gallery-left"
       onClick={previousImage}
+      aria-label="Previous Image"
+      title="Previous (Left Arrow)"
     >
       <ChevronLeft />
     </button>
 
     <div className="gallery-content">
+      <h3 className="gallery-project-title">
+        {galleryProject === "blockchain-voting"
+          ? "Blockchain Voting System"
+          : galleryProject === "ai-chat-box"
+          ? "AI Chat Box"
+          : "Campus Readiness Platform"}
+      </h3>
+
       <img
         src={`/projects/${galleryProject}/${currentImage}.jpg`}
         alt={`${galleryProject} Screenshot ${currentImage}`}
@@ -570,6 +610,8 @@ function App() {
     <button
       className="gallery-arrow gallery-right"
       onClick={nextImage}
+      aria-label="Next Image"
+      title="Next (Right Arrow)"
     >
       <ChevronRight />
     </button>
