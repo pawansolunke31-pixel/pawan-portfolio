@@ -17,8 +17,6 @@ import {
   ChevronRight,
   X,
   Bot,
-  Sparkles,
-  Award,
 } from "lucide-react";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -475,47 +473,18 @@ function App() {
 
   <div className="education-card">
 
-    <div className="education-top">
-      <div className="education-icon-box">
-        <GraduationCap size={32} />
-      </div>
-
-      <div className="education-header-text">
-        <div className="education-title-row">
-          <h3>B.Tech Computer Science Engineering</h3>
-          <div className="education-cgpa-badge">
-            <Award size={16} className="cgpa-icon" />
-            <span className="cgpa-label">CGPA</span>
-            <span className="cgpa-number">8.26</span>
-          </div>
-        </div>
-
-        <p className="education-school">
-          <MapPin size={15} />
-          School of Engineering and Technology, MGM University, Chh. Sambhajinagar - 431001
-        </p>
-      </div>
+    <div className="education-icon">
+      <GraduationCap />
     </div>
 
-    <div className="education-divider"></div>
+    <div>
+      <h3>B.Tech Computer Science Engineering</h3>
 
-    <div className="education-content">
-      <div className="education-spec-tag">
-        <Sparkles size={16} />
-        <span>Specialization: <strong>Cyber Security, IoT & Blockchain Technology</strong></span>
-      </div>
+      <p>Specialization: Cyber Security, IoT & Blockchain Technology</p>
 
-      <p className="education-summary">
-        Focusing on cybersecurity defense, decentralized technologies, network security, IoT architecture, and modern full-stack software development.
-      </p>
+      <p>School of Engineering and Technology, MGM University, Chh. Sambhajinagar - 431001</p>
 
-      <div className="education-chips">
-        <span>IoT & Embedded</span>
-        <span>Blockchain</span>
-        <span>Cybersecurity</span>
-        <span>Network Security</span>
-        <span>Data Structures</span>
-      </div>
+      <span>CGPA: <strong>8.26</strong></span>
     </div>
 
   </div>
