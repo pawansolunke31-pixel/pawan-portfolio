@@ -17,6 +17,7 @@ import {
   ChevronRight,
   X,
   Bot,
+  Sparkles,
 } from "lucide-react";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -473,18 +474,43 @@ function App() {
 
   <div className="education-card">
 
-    <div className="education-icon">
-      <GraduationCap />
+    <div className="education-top">
+      <div className="education-icon-box">
+        <GraduationCap size={32} />
+      </div>
+
+      <div className="education-header-text">
+        <div className="education-title-row">
+          <h3>B.Tech Computer Science Engineering</h3>
+          <div className="education-cgpa-badge">
+            <span className="cgpa-label">CGPA</span>
+            <span className="cgpa-number">8.26</span>
+          </div>
+        </div>
+
+        <p className="education-school">School of Engineering and Technology</p>
+      </div>
     </div>
 
-    <div>
-      <h3>B.Tech Computer Science Engineering</h3>
+    <div className="education-divider"></div>
 
-      <p>Specialization: IoT & Blockchain Technology</p>
+    <div className="education-content">
+      <div className="education-spec-tag">
+        <Sparkles size={16} />
+        <span>Specialization: <strong>IoT & Blockchain Technology</strong></span>
+      </div>
 
-      <p>School of Engineering and Technology</p>
+      <p className="education-summary">
+        Focusing on decentralized technologies, smart contracts, network security, IoT architecture, and modern full-stack development solutions.
+      </p>
 
-      <span>CGPA: 8.26</span>
+      <div className="education-chips">
+        <span>IoT & Embedded</span>
+        <span>Blockchain</span>
+        <span>Cybersecurity</span>
+        <span>Network Security</span>
+        <span>Data Structures</span>
+      </div>
     </div>
 
   </div>
