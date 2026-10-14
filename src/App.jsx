@@ -484,7 +484,10 @@ function App() {
 
       <p>School of Engineering and Technology, MGM University, Chh. Sambhajinagar - 431001</p>
 
-      <span>CGPA: <strong>8.26</strong></span>
+      <div className="cgpa-pill">
+        <span className="cgpa-label">CGPA</span>
+        <span className="cgpa-val">8.26</span>
+      </div>
     </div>
 
   </div>

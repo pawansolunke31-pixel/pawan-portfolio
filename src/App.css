@@ -981,10 +981,30 @@ a {
   margin-bottom: 5px;
 }
 
-.education-card span {
-  color: #ffffff;
+.cgpa-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 14px;
+  border-radius: 50px;
+  background: rgba(0, 229, 255, 0.08);
+  border: 1px solid rgba(0, 229, 255, 0.35);
+  box-shadow: 0 0 12px rgba(0, 229, 255, 0.12);
+  margin-top: 8px;
+  width: fit-content;
+}
 
-  font-size: 14px;
+.cgpa-pill .cgpa-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #94a3b8;
+  letter-spacing: 0.5px;
+}
+
+.cgpa-pill .cgpa-val {
+  font-size: 15px;
+  font-weight: 800;
+  color: #00e5ff;
 }
 
 
