@@ -488,7 +488,10 @@ function App() {
           </div>
         </div>
 
-        <p className="education-school">School of Engineering and Technology</p>
+        <p className="education-school">
+          <MapPin size={15} />
+          School of Engineering and Technology, MGM University, Chh. Sambhajinagar - 431001
+        </p>
       </div>
     </div>
 

@@ -1034,9 +1034,19 @@ a {
 
 .education-school {
   color: #38bdf8;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   margin-bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.5;
+  flex-wrap: wrap;
+}
+
+.education-school svg {
+  color: #00e5ff;
+  flex-shrink: 0;
 }
 
 .education-divider {
