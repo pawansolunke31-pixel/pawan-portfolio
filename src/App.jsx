@@ -18,6 +18,7 @@ import {
   X,
   Bot,
   Sparkles,
+  Award,
 } from "lucide-react";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -483,6 +484,7 @@ function App() {
         <div className="education-title-row">
           <h3>B.Tech Computer Science Engineering</h3>
           <div className="education-cgpa-badge">
+            <Award size={16} className="cgpa-icon" />
             <span className="cgpa-label">CGPA</span>
             <span className="cgpa-number">8.26</span>
           </div>
