@@ -1022,14 +1022,15 @@ a {
 .education-cgpa-badge .cgpa-label {
   font-size: 12px;
   font-weight: 600;
-  color: #94a3b8;
+  color: #38bdf8;
   letter-spacing: 0.5px;
 }
 
 .education-cgpa-badge .cgpa-number {
   font-size: 14px;
   font-weight: 800;
-  color: #00e5ff;
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.35);
 }
 
 .education-school {
