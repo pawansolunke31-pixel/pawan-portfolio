@@ -1034,9 +1034,10 @@ a {
 
 .education-school {
   color: #38bdf8;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   margin-bottom: 0;
+  line-height: 1.5;
 }
 
 .education-divider {
