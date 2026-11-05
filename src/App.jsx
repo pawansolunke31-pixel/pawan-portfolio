@@ -22,6 +22,7 @@ import {
   BookOpen,
   Award,
   FileText,
+  Cpu,
 } from "lucide-react";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -464,6 +465,58 @@ function App() {
 
           </div>
 
+
+          {/* Smart Classroom Automation System */}
+          <div className="project-card">
+
+            <div className="project-icon">
+              <Cpu size={28} />
+            </div>
+
+            <h3>Smart Classroom Automation System</h3>
+
+            <div className="project-dev-badge">DEV :- Pawan Solunke</div>
+
+            <p>
+              An IoT-based smart classroom system that automates lighting,
+              attendance, and environment monitoring using Arduino, Raspberry Pi,
+              and Python for an efficient and intelligent learning environment.
+            </p>
+
+            <div className="project-tech">
+              <span>IoT</span>
+              <span>Arduino</span>
+              <span>Raspberry Pi</span>
+              <span>Python</span>
+            </div>
+
+            <div className="project-actions">
+              <a
+                href="https://github.com/bhagyawantganesh48/Smart-Classroom-Automation-System"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-btn github-btn"
+                title="View Source Code on GitHub"
+              >
+                <FaGithub size={16} />
+                Code
+              </a>
+
+              <button
+                className="project-btn gallery-btn"
+                onClick={() => {
+                  setGalleryProject("smart-classroom");
+                  setGalleryTotal(5);
+                  setCurrentImage(1);
+                  setGalleryOpen(true);
+                }}
+              >
+                Gallery
+              </button>
+            </div>
+
+          </div>
+
         </div>
 
       </section>
@@ -722,7 +775,9 @@ function App() {
                 ? "Blockchain Voting System"
                 : galleryProject === "ai-chat-box"
                   ? "AI Chat Box"
-                  : "Campus Readiness Platform"}
+                  : galleryProject === "smart-classroom"
+                    ? "Smart Classroom Automation System"
+                    : "Campus Readiness Platform"}
             </h3>
 
             <img
